@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+
+  "name": Control - Tea,
+  "description": "Displays photo and inspiring quote when opening new tab",
+  "version": "1.0",
+
+  "chrome_url_overrides": {
+    "newtab": "control-tea.html"
+  },
+
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+
+  "permissions": ["tabs"],
+
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  }
+}
